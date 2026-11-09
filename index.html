@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizador de Interfaz - Guardian Interfaz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- El script lo cargamos con defer para asegurarnos de que el DOM está listo -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="card-config">
+        <!-- Parte 1: Contenedor vacío para inyectar el saludo de bienvenida -->
+        <div id="contenedor-bienvenida"></div>
+
+        <!-- Parte 2: Formulario de Preferencias -->
+        <form id="form-preferencias">
+            <h2>Configura tu entorno</h2>
+
+            <div class="grupo-campo">
+                <label for="nombre-usuario">Nombre de Usuario:</label>
+                <input type="text" id="nombre-usuario" placeholder="Ej: Sergio" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="color-fondo">Color de Fondo:</label>
+                <input type="color" id="color-fondo" value="#ffffff">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="selector-tema">Tema Visual:</label>
+                <select id="selector-tema">
+                    <option value="claro">Modo Claro</option>
+                    <option value="oscuro">Modo Oscuro</option>
+                </select>
+            </div>
+
+            <div class="grupo-botones">
+                <!-- Parte 3 y 4: Botones -->
+                <button type="submit" id="btn-guardar">Guardar Preferencias</button>
+                <button type="button" id="btn-restablecer">Restablecer Interfaz</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

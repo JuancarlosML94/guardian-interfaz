@@ -8,7 +8,7 @@ const inputColor = document.getElementById("color-fondo");
 const selectTema = document.getElementById("selector-tema");
 const btnRestablecer = document.getElementById("btn-restablecer");
 
-// PARTE 1: Generar el saludo dinámico si hay usuario registrado
+// Generar el saludo dinámico si hay usuario registrado
 
 function mostrarBienvenida(nombre) {
 
